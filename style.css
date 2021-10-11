@@ -1,0 +1,183 @@
+*{
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      box-sizing: border-box;
+  }
+
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    /*non uso background-position: center;
+    per essere più fedele allo screenshot*/
+    position:relative;
+  }
+
+
+.menu{
+  position: absolute;
+  top:5%;
+  left:19%;
+  right:19%;
+  bottom:5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+
+header{
+  width: 100%;
+  height: 30%;
+  position: relative;
+}
+.logo{
+  background-image: url("img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.title{
+  width: 50%;
+  height: 25%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  color: rgba(0,221,0,255);
+  text-align: center;
+
+}
+
+.title h2 strong{
+font-size: 20px;
+}
+
+nav{
+  height: 5%;
+  background-color: rgba(0,221,0,255);
+  width: 80%;
+  margin-left: 10%;
+  border-top: 2px solid transparent;
+  position: relative;
+}
+
+.nav-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+}
+
+.first-option, .second-option, .third-option{
+  float: left;
+}
+
+.second-option{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+main{
+  margin-top: 3%;
+  height: 50%;
+
+}
+
+.scooter-available{
+  width: 80%;
+  height: 25%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+}
+
+.name-scooter{
+  font-size: 25px;
+  color: white;
+}
+
+.place {
+  color: white;
+}
+
+.actual-charge{
+  margin-bottom: 0;
+  height: 20%;
+  border-radius: 5px;
+}
+.Gino22{
+width: 50%;
+background-color: rgba(245,180,83,255);
+}
+
+.Mike24{
+width: 80%;
+background-color:rgba(30,195,30,255);
+}
+
+.Fede154{
+width: 20%;
+background-color: rgba(190,65,65,255);
+}
+
+
+
+@media only screen and (max-width: 1250px)
+{
+  .first-option, .second-option, .third-option{
+    margin: 0;
+    height: auto;
+  }
+  nav{
+    background-color: rgba(0,221,0,0);
+    margin-bottom: 20px;
+  }
+ .nav-container {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform:translate(0,-50%);
+}
+
+
+@media only screen and (max-width: 540px)
+{
+  header{
+    height: 20%;
+    margin-bottom: 25px;
+  }
+  .title h2 strong{
+    font-size: 11px;
+  }
+  nav{
+    height: 8%;
+  }
+  .first-option, .second-option, .third-option{
+    float: none;
+    text-align: left;
+  }
+
+  button, .place{
+    font-size: 10px;
+  }
+
+  input[type=checkbox] {
+    height: 10px;
+  }
+
+  .name-scooter{
+    font-size: 12px;
+  }
+}
