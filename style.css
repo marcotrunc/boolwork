@@ -9,7 +9,7 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background-image: url("img/background.jpg");
+    background-image: url("background.jpg");
     background-size: cover;
     /*non uso background-position: center;
     per essere più fedele allo screenshot*/
@@ -33,7 +33,7 @@ header{
   position: relative;
 }
 .logo{
-  background-image: url("img/logo.png");
+  background-image: url("logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
